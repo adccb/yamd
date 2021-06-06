@@ -1,0 +1,51 @@
+{
+  "name": "yamd",
+  "type": "module",
+  "engines": {
+    "node": "14.15.5"
+  },
+  "version": "1.0.0",
+  "description": "A yaml-to-markdown preprocessor that supports mixins and syntax reassignment.",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "prettier": "prettier --write src/*.js src/**/*.js",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mxtetrachord/yamd.git"
+  },
+  "author": "autumn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mxtetrachord/yamd/issues"
+  },
+  "homepage": "https://github.com/mxtetrachord/yamd#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "babel-jest": "^27.0.2",
+    "husky": "^6.0.0",
+    "jest": "^27.0.4",
+    "prettier": "^2.3.0"
+  },
+  "bin": {
+    "yamd": "./src/index.js",
+    "yamd-watch": "./src/index.js --watch"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "arrowParens": "avoid"
+  },
+  "dependencies": {
+    "js-yaml": "^3.14.1"
+  }
+}

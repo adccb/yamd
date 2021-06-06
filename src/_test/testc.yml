@@ -1,0 +1,16 @@
+'''
+this is front matter!
+@mixin foo {
+  - bar
+  - baz
+}
+
+@mixin quux {
+  - [ ] quax
+}
+'''
+this is a body
+
+  - bar
+  - baz
+...
